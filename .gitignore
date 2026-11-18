@@ -184,3 +184,6 @@ cython_debug/
 .idea/
 .vscode/
 configuracion.py
+
+# Archivos de configuracion de Windows
+desktop.ini
