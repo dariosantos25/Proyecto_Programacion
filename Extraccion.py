@@ -5,7 +5,7 @@ import pandas as pd
 
 # Funcion para consultar los indicadores del INPC en INEGI
 def consultar_inpc():
-    token = "COLOCA_AQUI_TU_NUEVO_TOKEN"
+    token = "bbd9c2b3-ecdf-a9dd-1632-0339fbb1d393"
 
     endpoint = f"https://www.inegi.org.mx/app/api/indicadores/desarrolladores/jsonxml/INDICATOR/910394,910395,910397,910398,910392/es/0/false/BIE-BISE/2.0/{token}?type=json"
 
@@ -50,7 +50,7 @@ def consultar_inpc():
 
 # Funcion para consultar los nacimientos registrados en INEGI
 def consultar_nacimientos():
-    token = "COLOCA_AQUI_TU_NUEVO_TOKEN"
+    token = "bbd9c2b3-ecdf-a9dd-1632-0339fbb1d393"
 
     endpoint = f"https://www.inegi.org.mx/app/api/indicadores/desarrolladores/jsonxml/INDICATOR/1002000026/es/0/false/BISE/2.0/{token}?type=json"
 
