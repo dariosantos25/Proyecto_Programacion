@@ -245,7 +245,7 @@ def revisar_archivos():
     print("Cantidad de registros:", len(df))
     #Revisa el archivo de consumo como porcentaje del PIB
     print("\nArchivo: Consumo_Pib_Bm.csv")
-    d =pd.read_csv("Consumo_Pib_Bm.csv")
+    df =pd.read_csv("Consumo_Pib_Bm.csv")
     print(df.dtypes)
     print(df.head())
     print(df.tail())
@@ -261,4 +261,4 @@ if __name__ == "__main__":
     consultar_consumo()
     consultar_crecimiento_consumo()
     consultar_consumo_pib()
-    revisar_archivos()
+    revisar_archivos ()

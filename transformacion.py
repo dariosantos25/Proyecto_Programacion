@@ -127,13 +127,13 @@ def preparar_inpc():
 
 # Revisar los archivos generados durante la transformación
 def revisar_archivos():
-    df_inpc = pd.read_csv(" Inpc_Anual.csv")
-    df_nacimientos=pd.read_csv("Nacimientos_Transformados.csv ")
+    df_inpc = pd.read_csv( "Inpc_Anual.csv")
+    df_nacimientos=pd.read_csv("Nacimientos_Transformados.csv")
     df_fecundidad= pd.read_csv("Fecundidad_Transformada.csv")
-    df_consumo =pd.read_csv(" Consumo_Transformado.csv")
+    df_consumo =pd.read_csv("Consumo_Transformado.csv" )
     df_crecimiento= pd.read_csv("Crecimiento_Consumo_Transformado.csv")
     df_consumo_pib= pd.read_csv("Consumo_Pib_Transformado.csv ")
-    df_inpc_preparado= pd.read_csv("Inpc_Preparado.csv")
+    df_inpc_preparado= pd.read_csv("Inpc_Preparado.csv" )
     print("\nRevisión de archivos transformados")
     print ("\nINPC anual")
     print("Registros:" , len(df_inpc))
@@ -173,11 +173,11 @@ def revisar_archivos():
 
 #Ejecutar las transformaciones
 if __name__ == "__main__":
-    transformar_inpc()
-    transformar_nacimientos()
+    transformar_inpc ()
+    transformar_nacimientos ()
     transformar_fecundidad()
     transformar_consumo()
     transformar_crecimiento()
     transformar_consumo_pib()
-    preparar_inpc()
+    preparar_inpc ()
     revisar_archivos()
